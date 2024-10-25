@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include<conio.h>
+int main() {
+clrscr();
+    // Displaying the student's bio-data with escape sequences
+    printf("Student Bio-Data\n");
+    printf("================\n\n");
+    printf("Name: \t\tsrikanth\n");         // \t for horizontal tab
+    printf("Age: \t\t20\n");
+    printf("Gender: \tMale\n");
+    printf("Course: \tB.tech. Computer Science\n");
+    printf("Year: \t\t1st Year\n");
+    printf("University: \tsps University\n\n");
+
+    printf("Address: \t123, reddynagar Street,\n");
+    printf("\t\tCity, State - 522415\n\n");  // \n for newline
+
+    printf("Email: \t\tsrikanth@gmail.com\n");
+    printf("Phone: \t\t+123456789\n\n");
+
+    // Displaying special characters using escape sequences
+    printf("Special Characters:\n");
+    printf("Single Quote:\'\n");            // \' for single quote
+    printf("Double Quote:\"\n");            // \" for double quote
+    printf("Backslash: \\\n");               // \\ for backslash
+    printf("Percentage Sign: \%\n");         //% sign
+
+getch();
+return 0;
+
+}
