@@ -1,0 +1,61 @@
+#include <stdio.h>
+int main() {
+    // Declare variables
+    double principal, rate, time;
+    double simpleInterest, amount, compoundInterest;
+    double base;
+
+    // Get user input
+    printf("Enter the principal amount: ");
+    scanf("%lf", &principal);
+    printf("Enter the rate of interest (per annum): ");
+    scanf("%lf", &rate);
+    printf("Enter the time (in years): ");
+    scanf("%lf", &time);
+
+    // Calculate Simple Interest
+    simpleInterest = (principal * rate * time) / 100;
+
+    // Calculate the base for compound interest
+    base = 1 + rate / 100;
+
+    // Initialize amount to principal
+    amount = principal;
+    
+    // Calculate base^time using direct multiplication
+    if (time == 1) {
+        amount = amount * base;
+    } else if (time == 2) {
+        amount = amount * base * base;
+    } else if (time == 3) {
+        amount = amount * base * base * base;
+    } else if (time == 4) {
+        amount = amount * base * base * base * base;
+    } else if (time == 5) {
+        amount = amount * base * base * base * base * base;
+    } else if (time == 6) {
+        amount = amount * base * base * base * base * base * base;
+    } else if (time == 7) {
+        amount = amount * base * base * base * base * base * base * base;
+    } else if (time == 8) {
+        amount = amount * base * base * base * base * base * base * base * base;
+    } else if (time == 9) {
+        amount = amount * base * base * base * base * base * base * base * base * base;
+    } else if (time == 10) {
+        amount = amount * base * base * base * base * base * base * base * base * base * base;
+    } else {
+        // Handling times greater than 10 years
+        printf("Time greater than 10 years is not handled in this code.\n");
+        return 1; // Exit with error code
+    }
+
+    // Calculate Compound Interest
+    compoundInterest = amount - principal;
+
+    // Print results
+    printf("\nSimple Interest: %.2f\n", simpleInterest);
+    printf("Compound Interest: %.2f\n", compoundInterest);
+
+    return 0;
+}
+
