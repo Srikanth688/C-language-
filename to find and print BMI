@@ -1,0 +1,25 @@
+//Write a program that takes values from the user and calculate the BMI of a person.
+
+#include <stdio.h>
+#include<conio.h>
+
+int main() {
+    float weight, height, bmi;
+    clrscr();
+
+    // Taking input from the user
+    printf("Enter your weight in kilograms: ");
+    scanf("%f", &weight);
+
+    printf("Enter your height in meters: ");
+    scanf("%f", &height);
+
+    // Calculating BMI
+    bmi = weight / (height * height);
+
+    // Displaying the BMI
+    printf("Your BMI is: %.2f\n", bmi);
+
+    getch();
+    return 0;
+}
