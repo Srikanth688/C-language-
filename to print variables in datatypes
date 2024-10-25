@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<conio.h>
+int main() {
+    // Declaring variables of different data types
+    int integer_var = 42;
+    float float_var = 3.14;
+    double double_var = 3.1415926539;
+    char char_var = 'A';
+    short short_var = 32000;
+    long long_var = 1234567890;
+    long long long_long_var = 123456789012345;
+    unsigned int unsigned_int_var = 4000000000;
+    unsigned long unsigned_long_var = 5000000000;
+    unsigned long long unsigned_long_long_var = 9000000000000000000;
+    signed char signed_char_var = -120;
+    unsigned char unsigned_char_var = 250;
+    clrscr();
+    // Printing variables with appropriate format specifiers
+    printf("Integer: %d\n", integer_var);
+    printf("Float: %f\n", float_var);
+    printf("Double: %lf\n", double_var);
+    printf("Character: %c\n", char_var);
+    printf("Short: %hd\n", short_var);
+    printf("Long: %ld\n", long_var);
+    printf("Long Long: %lld\n", long_long_var);
+    printf("Unsigned Int: %u\n", unsigned_int_var);
+    printf("Unsigned Long: %lu\n", unsigned_long_var);
+    printf("Unsigned Long Long: %llu\n", unsigned_long_long_var);
+    printf("Signed Char: %hhd\n", signed_char_var);
+    printf("Unsigned Char: %hhu\n", unsigned_char_var);
+    getch();
+    return 0;
+}
