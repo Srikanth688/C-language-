@@ -1,0 +1,28 @@
+//Swapping two numbers with the help of third variable
+
+#include <stdio.h>
+
+int main() {
+    // Declare three variables
+    int a, b, temp;
+    
+    // Initialize the values of a and b
+    printf("Enter value of a: ");
+    scanf("%d", &a);
+    
+    printf("Enter value of b: ");
+    scanf("%d", &b);
+    
+    // Print values before swapping
+    printf("Before swapping: a = %d, b = %d\n", a, b);
+    
+    // Swap the values using the third variable
+    temp = a;  // Store the value of 'a' in 'temp'
+    a = b;     // Assign the value of 'b' to 'a'
+    b = temp;  // Assign the value stored in 'temp' to 'b'
+    
+    // Print values after swapping
+    printf("After swapping: a = %d, b = %d\n", a, b);
+    
+return 0;
+}
