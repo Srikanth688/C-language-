@@ -1,0 +1,9 @@
+#include"stdio.h"
+int main(){
+int a,volume;
+printf("enter the value of a=%d");
+scanf("%d",&a);
+volume=a*a*a;
+printf("the volume of cube=%d",volume);
+return 0;
+}
