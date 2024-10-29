@@ -1,0 +1,12 @@
+include<stdio.h>
+int main()
+{
+    
+    int a=10,b=20;
+    int c=30;
+    printf("the values of a=%d,b=%d,c=%d\n",a,b,c);
+    printf("the greatest value=%d",a>b ? b:c);
+    return 0;
+}
+    
+    
