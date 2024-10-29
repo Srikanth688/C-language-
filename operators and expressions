@@ -1,0 +1,16 @@
+#include"stdio.h"
+int main()
+{
+    int a=12,b=20;
+    printf("the value of a=%d,b=%d\n",a,b);
+    printf("the AND operator=%d\n",a&b);
+    printf("the OR operator=%d\n",a|b);
+    printf("the not operator=%d\n",a^b);
+    printf("the compliment=%d\n",~a);
+    printf("the left shift=%d\n",a<<1);
+    printf("the left shift=%d",b>>1);
+    return 0;
+}
+    
+    
+    
