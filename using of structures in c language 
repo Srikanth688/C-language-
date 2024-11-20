@@ -1,0 +1,23 @@
+
+//structures program//
+#include"stdio.h"
+
+struct emp
+{
+    int id;
+    char name[40];
+    float sal;
+};
+void main()
+{
+    struct emp e;
+    
+    printf("enter the id,name,salary:");
+    scanf("%d",&e.id);
+    scanf("%s",&e.name);
+    scanf("%f",&e.sal);
+    printf("id:%d",e.id);
+    printf("\nName:%s",e.name);
+    printf("\nsalary:%f",e.sal);
+    
+}
