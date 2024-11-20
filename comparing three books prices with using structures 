@@ -1,0 +1,36 @@
+
+/structures//
+#include<stdio.h>
+struct book
+{
+    char title[100];
+    char author[100];
+    float price;
+};
+int main()
+{
+    
+    struct book Book1,Book2;
+    
+    printf("enter the title,author,price:\n");
+    scanf("%s",&Book1.title);
+    scanf("%s",&Book1.author);
+    scanf("%f",&Book1.price);
+    printf("title:%s\n",Book1.title);
+    printf("author:%s\n",Book1.author);
+    printf("price:%f\n",Book1.price);
+    printf("enter the second book details:\n");
+    scanf("%s",&Book2.title);
+    scanf("%s",&Book2.author);
+    scanf("%f",&Book2.author);
+    printf("title:%s\n",Book2.title);
+    printf("author:%s\n",Book2.author);
+    printf("price:%f\n",Book2.price);
+    if(Book1.price>Book2.price)
+    {
+        printf("the book1 is :",Book1.price);
+    }else{
+        printf("the book2 is:",Book2.price);
+    }
+    return 0;
+}
