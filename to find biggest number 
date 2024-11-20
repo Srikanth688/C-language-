@@ -1,0 +1,14 @@
+include"stdio.h"
+int main()
+{
+    int a=10;
+    int b=20;
+    printf("the values of a=%d,b=%d\n",a,b);
+    if(a<b)
+    {
+        printf("the greatest=%d",b);
+    }else{
+        printf("the greatest=%d",a);
+    }
+    return 0;
+}
