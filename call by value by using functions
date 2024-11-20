@@ -1,0 +1,19 @@
+include<stdio.h>
+int sum(int,int);
+int main()
+    {
+        int x,y,result;
+        printf("enter the x,y result");
+        scanf("%d%d",&x,&y);
+        
+        result=sum(x,y);
+        printf("addition=%d",result);
+        
+    }
+    int sum(int a,int b)
+    {
+        int c;
+        c=a+b;
+        return c;
+        
+    }
