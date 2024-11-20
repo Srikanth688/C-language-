@@ -1,0 +1,18 @@
+
+#include<stdio.h>
+union num
+{
+    int i;
+    char name[20];
+}e;
+int main()
+{
+    e.i=10;
+    printf("enter the name:");
+    scanf("%s",&e.name);
+    printf("%s\n",e.name);
+    printf("%d",e.i);
+    
+    
+    return 0;
+}
