@@ -1,0 +1,18 @@
+#include<stdio.h>
+ struct std
+ {
+     int id;
+     char name[50];
+     float sal;
+};
+ void main()
+ {
+     struct std s;
+     printf("enter the id,name,salary:");
+     scanf("%d",&s.id);
+     scanf("%s",&s.name);
+     scanf("%f",&s.sal);
+     printf("id:%d\n",s.id);
+     printf("name:%s\n",s.name);
+     printf("salary:%f",s.sal);
+ }
