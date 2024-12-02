@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(){
+    
+    int a=29;
+    int *ptr;
+    ptr=&a;
+    printf("the address:%u\n",&a);
+    printf("the value=%d",*ptr);
+    return 0;
+    
+}
