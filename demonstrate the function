@@ -1,0 +1,32 @@
+#include <cstdio>
+using namespace std;
+int max_of_four(int,int,int,int);
+Add int max_of_four(int a, int b, int c, int d)
+
+int max_of_four(int a,int b,int c,int d)
+{
+    int large=a;
+    
+    if(large=b)
+    {
+        large=b;
+    }
+    if(large=c)
+    {
+        large=c;
+    }
+    if(large=d)
+    {
+        large=d;
+    }
+    return large;
+}
+
+int main() {
+    int a, b, c, d;
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+    int ans = max_of_four(a, b, c, d);
+    printf("%d", ans);
+    
+    return 0;
+}
